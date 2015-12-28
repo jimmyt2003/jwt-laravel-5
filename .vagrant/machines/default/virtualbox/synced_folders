@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/jwt":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/jwt","hostpath":"/Users/james/personal/jwt","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/james/personal/jwt","disabled":false}}}
