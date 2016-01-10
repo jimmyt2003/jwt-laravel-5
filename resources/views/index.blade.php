@@ -1,45 +1,27 @@
-<!DOCTYPE html>
+<!-- resources/views/index.php -->
+
+<!doctype html>
 <html>
     <head>
-        <title>Laravel</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
+        <meta charset="utf-8">
+        <title>Angular-Laravel Authentication</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     </head>
-    <body>
+    <body ng-app="authApp">
+
         <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
-        </div>
+            <div ui-view></div>
+        </div>        
+
     </body>
+
+    <!-- Application Dependencies -->
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="node_modules/satellizer/satellizer.js"></script>
+
+    <!-- Application Scripts -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/authController.js"></script>
+    <script src="scripts/userController.js"></script>
 </html>
