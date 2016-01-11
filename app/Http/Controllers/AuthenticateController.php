@@ -23,9 +23,8 @@ class AuthenticateController extends Controller
     public function index()
     {
         // Retrieve all the users in the database and return them
-	    $users = User::orderBy('email', 'asc')->simplePaginate('2');
-	    //return $users;
-        return response()->json(compact($users));
+	    $users = User::all();
+	    return $users;
     }    
   
     public function authenticate(Request $request)
