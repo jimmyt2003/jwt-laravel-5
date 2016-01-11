@@ -24,7 +24,8 @@ class AuthenticateController extends Controller
     {
         // Retrieve all the users in the database and return them
 	    $users = User::where('id', '>', 0)->simplePaginate('2');
-	    return $users;
+	    //return $users;
+        return response()->json(compact($users));
     }    
   
     public function authenticate(Request $request)
