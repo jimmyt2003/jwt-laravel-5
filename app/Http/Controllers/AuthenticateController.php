@@ -23,7 +23,7 @@ class AuthenticateController extends Controller
     public function index()
     {
         // Retrieve all the users in the database and return them
-	    $users = User::simplePaginate('2');
+	    $users = User::where('id', '>', 0)->simplePaginate('2');
 	    return $users;
     }    
   
